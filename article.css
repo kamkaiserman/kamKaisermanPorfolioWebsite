@@ -1,0 +1,65 @@
+                    main {
+                        padding: 200px 30vw 10vw 30vw;
+                        background-color: #EFF8E2;
+                    }
+                    
+                    main h1,
+                    main h2,
+                    {
+                        color: #58BC82;
+                        font-family: Raleway, sans-serif;
+                    }
+                    
+                    main h3 {
+                        color: #58BC82;
+                        font-family: Raleway, sans-serif;
+                        letter-spacing: 3px;
+                    }
+                    
+                    main p,
+                    main ul {
+                        line-height: 2;
+                        color: #58BC82;
+                        font-size: 18px;
+                    }
+                    
+                    main img {
+                        max-width: 40vw;
+                        padding: 2vw 0px;
+                    }
+                    
+                    #headline {
+                        padding: 0px;
+                    }
+                    
+                    #back-button {
+                        font-family: Raleway, sans-serif;
+                        text-transform: uppercase;
+                        padding: 30px;
+                        color: #FFF;
+                        font-size: 24px;
+                        background-color: #111;
+                        border-radius: 10px;
+                        margin-right: 20px;
+                        display: flex;
+                        flex-direction: row;
+                        transition: 1s;
+                    }
+                    
+                    #back-button:hover {
+                        color: #111;
+                        background-color: #FFF;
+                        letter-spacing: 3px;
+                    }
+                    
+                    #flexbox-row {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        padding: 200px 20vw 10vw 20vw;
+                    }
+                    
+                    .fa fa-angle-left {
+                        font-size: 30px;
+                        padding: 40px;
+                    }

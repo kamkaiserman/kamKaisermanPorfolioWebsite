@@ -1,0 +1,31 @@
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+}
+
+.column img {
+    vertical-align: middle;
+    transition: 1s;
+}
+
+.column img:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}

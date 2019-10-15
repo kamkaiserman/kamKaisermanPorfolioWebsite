@@ -1,0 +1,14 @@
+#tile-one {
+    background-image: url("/images/math_magicians_banner.png");
+    background-position: center;
+}
+
+#tile-two {
+    background-image: url("images/sim-week-banner.png");
+    background-position: center;
+}
+
+#tile-three {
+    background-image: url("images/fox_hills_banner.png");
+    background-position: center;
+}

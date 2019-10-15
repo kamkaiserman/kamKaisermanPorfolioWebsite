@@ -1,0 +1,65 @@
+#welcome-section {
+    padding: 200px 20vw 10vw 20vw;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn.stocksnap.io/img-thumbs/280h/KQY7DIBID3.jpg");
+    color: #EFF8E2;
+}
+
+#projects {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: #58BC82;
+    padding: 0px;
+    margin: 0px;
+}
+
+#projects a {
+    text-transform: none;
+}
+
+.project-tile {
+    margin-right: 0px;
+    min-width: 33.333333vw;
+    height: 500px;
+    transition: 0.5s;
+    background: #EFF8E2;
+    color: #111;
+    text-shadow: 0px 0px 10px #FFF;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    text-align: center;
+}
+
+.project-tile:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    color: #FFF;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px #000;
+}
+
+#tile-one {
+    background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/00IU9IQW7P.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tile-two {
+    background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/F164KBFZ95.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tile-three {
+    background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/4QXLX5ZULO.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tile-content {
+    padding: 200px 50px 50px 50px;
+}
