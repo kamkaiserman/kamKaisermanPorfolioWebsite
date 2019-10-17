@@ -8,6 +8,7 @@
     <meta name="author" content="Kam Kaiserman's Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway:800|Nunito:700|Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main_page_style.css">
@@ -19,37 +20,37 @@
         <div id="navbar-mobile" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-                <a href="/index.html">Home.</a>
+                <a href="/index.html" id="navbar-active">Home.</a>
                 <a href="/design.html">Graphic Design.</a>
-                <a href="/photography.html" id="navbar-active">Photography.</a>
+                <a href="/photography.html">Photography.</a>
                 <a href="https://www.instagram.com/kamkaiserman/" target="_blank">Instagram.</a>
                 <a href="https://github.com/kamkaiserman/" target="blank">GitHub.</a>
+                <div id="sms-button">
+                    <a href="sms:801-558-1729">Send me a text - 801-558-1729</a>
+                    <p><span class="highlight">KamKaiserman@gmail.com</span></p>
+                </div>
             </div>
-            <section id="contact">
-                <a href="sms:801-558-1729">Tap here to send me a text - 801-558-1729</a>
-                <p><span class="highlight">KamKaiserman@gmail.com</span></p>
-            </section>
         </div>
         <div id="header-mobile">
-            <div id="logo-mobile">
-                <h1>Kam Kaiserman</h1>
-            </div>
             <div id="nav-button" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <div id="logo-mobile">
+                <p>Kam Kaiserman</p>
+            </div>
         </div>
         <div id="navbar">
             <div id="main-nav">
                 <ul>
-                    <li><a href="/index.html">kam kaiserman.</a></li>
+                    <li><a href="/index.html" id="navbar-active">kam kaiserman.</a></li>
                     <li><a href="/design.html">Graphic Design.</a></li>
-                    <li><a href="/photography.html" id="navbar-active">Photography.</a></li>
+                    <li><a href="/photography.html">Photography.</a></li>
                 </ul>
             </div>
             <div id="secondary-nav">
                 <ul>
                     <li><a href="https://www.instagram.com/kamkaiserman/" target="_blank">Instagram.</a></li>
                     <li><a href="https://github.com/kamkaiserman/" target="blank">GitHub.</a></li>
-                    <a href="#contact">
-                        <li id="contact-button">Contact</li>
+                    <a>
+                        <li id="contact-button" onclick="openNav()">Contact</li>
                     </a>
                 </ul>
             </div>
@@ -90,11 +91,6 @@
             </a>
         </div>
     </main>
-    <section id="contact">
-        <h3>Contact Me!</h3>
-        <a href="sms:801-558-1729">Click here to send me a text - 801-558-1729</a>
-        <p>or email me @ <span class="highlight"> KamKaiserman@gmail.com </span></p>
-    </section>
     <a href="https://github.com/kamkaiserman/" id="profile-link" target="_blank">
         <footer>
             Kam Kaiserman @ GitHub.
@@ -106,6 +102,9 @@
         </div>
     </a>
     <script src="js/scripts.js"></script>
+    <script type="module">
+        import LazyLoad from "./lazy-load.js"; LazyLoad.init();
+    </script>
 </body>
 
 </html>

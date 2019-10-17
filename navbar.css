@@ -41,35 +41,43 @@
 }
 
 #contact-button {
-    background-color: #FFF;
+    background-color: #111;
+    color: #FFF;
     border-radius: 10px;
     transition: 1s;
     margin-right: 10px;
 }
 
 #contact-button:hover {
-    background-color: #111;
-    color: #FFF;
+    background-color: #FFF;
+    color: #111;
+    cursor: pointer;
 }
 
 #header-mobile {
     display: none;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width: 100vw;
-    z-index: 201;
-    padding: 30px 50px 50px 50px;
     position: fixed;
     top: 0;
+    z-index: 201;
+    padding: 20px 50px 50px 50px;
     overflow: hidden;
-    color: #FFF;
+    color: #111;
     text-transform: uppercase;
+    left: 0;
+    font-size: 20px;
+}
+
+#logo-mobile {
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 #nav-button {
-    font-size: 36px;
+    padding: 20px 20px 20px 0px;
+    text-align: center;
+    font-size: 24px;
     color: #111;
+    margin-top: -4px;
 }
 
 .overlay {
@@ -82,7 +90,7 @@
     z-index: 202;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(239, 248, 226, 1) 0%, rgba(88, 188, 130, 1) 100%);
+    background: linear-gradient(90deg, rgba(173, 222, 184, 1) 0%, rgba(88, 188, 130, 1) 100%);
     overflow-y: hidden;
     transition: 0.5s;
 }
@@ -95,6 +103,10 @@
     margin-top: 30px;
 }
 
+#nav-links {
+    display: initial;
+}
+
 .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -105,20 +117,16 @@
 }
 
 .overlay .closebtn {
-    text-align: right;
-    padding: 30px 50px 50px 50px;
+    text-align: left;
+    padding: 30px 70px 50px 50px;
     font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
+#sms-button a {
+    color: #FFF;
+    background-color: #111;
+    padding: 20px;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 850px) {
@@ -128,8 +136,7 @@
     #header-mobile {
         display: flex;
     }
-    #contact {
-        position: float;
-        bottom: 0;
+    #navbar-mobile #contact {
+        display: flex;
     }
 }

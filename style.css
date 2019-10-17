@@ -120,10 +120,30 @@ footer:hover {
     letter-spacing: 1px;
 }
 
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.centered {
+    display: block;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 850px) {
-    #contact {
-        padding-top: 200px;
-        color: #111;
-        background: none;
+    body {
+        background: rgb(239, 248, 226);
+        background: linear-gradient(90deg, rgba(173, 222, 184, 1) 0%, rgba(88, 188, 130, 1) 100%);
     }
 }

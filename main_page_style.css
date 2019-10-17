@@ -23,7 +23,7 @@
 
 .project-tile {
     margin-right: 0px;
-    min-width: 33.333333vw;
+    width: 33.333333vw;
     height: 500px;
     transition: 0.5s;
     background: #EFF8E2;
@@ -62,4 +62,13 @@
 
 .tile-content {
     padding: 200px 50px 50px 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .project-tile {
+        width: 100vw;
+    }
+    #projects {
+        flex-wrap: wrap;
+    }
 }

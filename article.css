@@ -1,6 +1,10 @@
                     main {
-                        padding: 200px 30vw 10vw 30vw;
-                        background-color: #EFF8E2;
+                        margin: 0px 25vw 10vw 25vw;
+                        padding: 50px;
+                        background-color: #eeeeee;
+                        border-radius: 10px;
+                        font-family: 'Roboto Slab', serif;
+                        box-shadow: 2px 2px 10px #58BC82;
                     }
                     
                     main h1,
@@ -11,7 +15,6 @@
                     }
                     
                     main h3 {
-                        color: #58BC82;
                         font-family: Raleway, sans-serif;
                         letter-spacing: 3px;
                     }
@@ -19,13 +22,13 @@
                     main p,
                     main ul {
                         line-height: 2;
-                        color: #58BC82;
                         font-size: 18px;
                     }
                     
                     main img {
                         max-width: 40vw;
                         padding: 2vw 0px;
+                        text-align: center;
                     }
                     
                     #headline {
@@ -62,4 +65,17 @@
                     .fa fa-angle-left {
                         font-size: 30px;
                         padding: 40px;
+                    }
+                    
+                    @media screen and (max-width: 850px) {
+                        main {
+                            padding: 50px;
+                            margin: 0px;
+                        }
+                        #flexbox-row {
+                            flex-direction: column;
+                        }
+                        #back-button {
+                            margin-right: 0px;
+                        }
                     }
